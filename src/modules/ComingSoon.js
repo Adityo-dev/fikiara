@@ -34,7 +34,7 @@ export default function ComingSoon() {
       <div className="max-w-md text-center">
         <h1 className="text-4xl font-bold mb-4">🚧 Coming Soon</h1>
         <p className="mb-6 text-gray-300">
-          We're working hard to bring something amazing!
+          Were working hard to bring something amazing!
         </p>
 
         <div className="flex justify-center space-x-4 text-xl font-mono">
