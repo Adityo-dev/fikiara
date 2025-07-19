@@ -1,9 +1,10 @@
-import ComingSoon from "@/modules/ComingSoon";
+import Hero from "@/modules/home/hero/Hero";
 
 export default function Home() {
   return (
     <>
-      <ComingSoon />
+      {/* <ComingSoon /> */}
+      <Hero />
     </>
   );
 }

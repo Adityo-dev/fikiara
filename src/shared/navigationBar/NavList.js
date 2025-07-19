@@ -11,14 +11,14 @@ const navItems = [
 
 function NavList() {
   return (
-    <ul className="flex space-x-6">
+    <ul className="flex space-x-8">
       {navItems.map((item) => (
-        <li key={item.name}>
+        <li key={item?.name}>
           <Link
-            href={item.path}
-            className="text-white hover:text-blue-400 transition"
+            href={item?.path}
+            className="capitalize text-lg font-medium text-white hover:text-blue-400 transition"
           >
-            {item.name}
+            {item?.name}
           </Link>
         </li>
       ))}
