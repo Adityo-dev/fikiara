@@ -1,3 +1,5 @@
+import MainFooter from "@/shared/footer/MainFooter";
+import MainNavigationBar from "@/shared/navigationBar/MainNavigationBar";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -22,7 +24,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="w-full absolute z-40">
+          <MainNavigationBar />
+        </div>
         {children}
+        <MainFooter />
       </body>
     </html>
   );
