@@ -3,8 +3,8 @@ import Subject from "../subject/Subject";
 
 function Hero() {
   return (
-    <section className="bg-[#000247]">
-      <div className="relative container mx-auto flex items-center justify-between gap-12 py-36 px-4 z-40">
+    <section className="bg-[#114C5F] relative">
+      <div className="relative container mx-auto flex items-center justify-between gap-12 py-36 px-4 z-30">
         <div>
           <h1 className="text-[80px] font-semibold leading-24">
             Learn Anytime Grow, Every day.
