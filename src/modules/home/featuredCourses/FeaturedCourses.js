@@ -1,5 +1,7 @@
 "use client";
+import SectionColumnsHeaders from "@/components/sectionHeaders/SectionColumnsHeaders";
 import { featuredCourses } from "@/data/featuredCourses";
+import Image from "next/image";
 import { useState } from "react";
 import CourseCard from "./CourseCard";
 
@@ -14,15 +16,19 @@ export default function FeaturedCourses() {
   const filteredCourses =
     activeFilter === "all courses"
       ? featuredCourses
-      : featuredCourses.filter((course) => course.tags.includes(activeFilter));
+      : featuredCourses.filter((course) =>
+          course?.tags?.includes(activeFilter)
+        );
 
   return (
-    <section className="bg-[#11277C]  text-white py-20 px-4">
-      <div className="text-center mb-14">
-        <h2 className="text-5xl font-semibold leading-16">Featured Courses</h2>
-        <p className="text-lg text-[#D4D4D4] leading-8 mt-3">
-          Top-rated courses chosen for you — learn faster, smarter, better.
-        </p>
+    <section className="relative bg-[#F5F1EA] text-white py-32 px-4 overflow-hidden">
+      <div className="relative z-10">
+        <SectionColumnsHeaders
+          title={"Featured Courses"}
+          description={
+            "Top-rated courses chosen for you — learn faster, smarter, better."
+          }
+        />
 
         {/* Filters */}
         <div className="mt-6 flex flex-wrap justify-center gap-4">
@@ -30,8 +36,8 @@ export default function FeaturedCourses() {
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              className={`text-[#fff] text-lg font-medium px-6 py-2.5 rounded-md border border-[#d4d4d44D] cursor-pointer ${
-                activeFilter === filter && "bg-[#1DAB55]"
+              className={`text-[#101B24] text-lg font-medium px-6 py-2 cursor-pointer border border-[#FFA41F] rounded-md ${
+                activeFilter === filter && "bg-[#FFA41F]"
               }`}
             >
               {filter}
@@ -41,10 +47,21 @@ export default function FeaturedCourses() {
       </div>
 
       {/* Course Cards */}
-      <div className="container mx-auto px-4 grid grid-cols-4 gap-6">
+      <div className="relative container mx-auto px-4 grid grid-cols-4 gap-4 mt-16 z-20">
         {filteredCourses.map((course) => (
           <CourseCard key={course.id} course={course} />
         ))}
+      </div>
+
+      {/* Party Paper Background Image */}
+      <div className="absolute -top-1.5 inset-0">
+        <Image
+          src={"/party-paper.png"}
+          width={1600}
+          height={600}
+          alt=""
+          className="w-full h-fit"
+        />
       </div>
     </section>
   );

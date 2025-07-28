@@ -1,24 +1,26 @@
 import Image from "next/image";
 
-// components/SubjectCard.jsx
 export default function SubjectCard({ icon, title, courses, workshops }) {
   return (
-    <div className="flex items-center gap-4 p-4 rounded-lg border border-white/10 bg-white/10 backdrop-blur-[2px] hover:shadow-lg hover:border transition cursor-pointer">
-      <div className="bg-[#2D2F55] p-4 rounded-lg">
+    <div className="flex items-center gap-4 p-4 rounded-lg border border-[#FFFFFF1A] bg-[#FFFFFF1A] backdrop-blur-[2px] cursor-pointer">
+      {/* Subject Image */}
+      <div className="bg-[#FFFFFF1A] p-4 rounded-lg">
         <Image
           width={400}
           height={400}
           src={icon}
           alt={title}
-          className="w-10 h-10"
+          className="w-12 h-12 object-contain"
         />
       </div>
+      {/* Subject Name And Info */}
       <div className="flex-1 space-y-1.5">
         <h3 className="text-white text-lg font-semibold leading-8">{title}</h3>
-        <p className="text-sm text-[#EEA513]">
+        <p className="text-sm text-[#FFA41F]">
           • Courses: {courses} <span>• Workshops: {workshops}</span>
         </p>
       </div>
+      {/* Arrow Svg */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"

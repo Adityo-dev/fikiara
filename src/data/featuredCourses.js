@@ -1,7 +1,7 @@
 const featuredCourses = [
   {
     id: 1,
-    thumbnail: "/cardImage.jpg",
+    thumbnail: "/mobileGraphics.jpg",
     title: "মোবাইল গ্রাফিক্স স্পেশাল কোর্স",
     category: "Graphics Design",
     rating: 4.6,
@@ -13,7 +13,7 @@ const featuredCourses = [
   },
   {
     id: 2,
-    thumbnail: "/cardImage.jpg",
+    thumbnail: "/digitalMarketing.jpg",
     title: "ডিজিটাল মার্কেটিং মাস্টারক্লাস",
     category: "Marketing",
     rating: 4.8,
@@ -25,7 +25,7 @@ const featuredCourses = [
   },
   {
     id: 3,
-    thumbnail: "/cardImage.jpg",
+    thumbnail: "/excelandDataAnalysis.jpg",
     title: "এক্সেল অ্যান্ড ডেটা অ্যানালাইসিস",
     category: "Data Analysis",
     rating: 4.7,
@@ -37,7 +37,7 @@ const featuredCourses = [
   },
   {
     id: 4,
-    thumbnail: "/cardImage.jpg",
+    thumbnail: "/VideoEditingProCourseonMobile.jpg",
     title: "মোবাইলে ভিডিও এডিটিং প্রো কোর্স",
     category: "Video Editing",
     rating: 4.5,
@@ -49,7 +49,7 @@ const featuredCourses = [
   },
   {
     id: 5,
-    thumbnail: "/cardImage.jpg",
+    thumbnail: "/web.jpg",
     title: "HTML, CSS দিয়ে ওয়েব ডিজাইন",
     category: "Web Design",
     rating: 4.6,
@@ -61,7 +61,7 @@ const featuredCourses = [
   },
   {
     id: 6,
-    thumbnail: "/cardImage.jpg",
+    thumbnail: "/freelancing.jpg",
     title: "ফ্রিল্যান্সিং ক্যারিয়ার গাইডলাইন",
     category: "Career",
     rating: 4.3,
@@ -73,7 +73,7 @@ const featuredCourses = [
   },
   {
     id: 7,
-    thumbnail: "/cardImage.jpg",
+    thumbnail: "/UIUXDesignFundamentals.jpg",
     title: "UI/UX ডিজাইন ফান্ডামেন্টাল",
     category: "Graphics Design",
     rating: 4.9,
@@ -85,7 +85,7 @@ const featuredCourses = [
   },
   {
     id: 8,
-    thumbnail: "/cardImage.jpg",
+    thumbnail: "/presentationDesignSpeaking.jpg",
     title: "প্রেজেন্টেশন ডিজাইন স্পিকিং",
     category: "Communication",
     rating: 4.4,
