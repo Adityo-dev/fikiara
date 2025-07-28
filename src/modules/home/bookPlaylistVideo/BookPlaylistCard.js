@@ -12,7 +12,7 @@ export default function BookPlaylistCard({ image, title, buttons, social }) {
           className="rounded-t-lg w-full h-60 object-cover"
         />
 
-        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-t hover:from-black to-transparent hover:opacity-100 cursor-pointer transform">
+        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-black to-transparent opacity-100 cursor-pointer transform">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
