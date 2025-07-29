@@ -47,7 +47,7 @@ export default function BookPlaylistCard({ image, title, buttons, social }) {
       <div className="p-4">
         <div className="flex justify-between gap-4 mb-8">
           <p className="text-[#101B24] text-lg leading-7">{title}</p>
-          {/* Social Icon AND link */}
+          {/*  */}
           <div className="flex gap-2 text-gray-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"

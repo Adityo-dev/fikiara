@@ -8,11 +8,6 @@ const bookPlaylistVideo = [
       { text: "Buy Book", variant: "secondary" },
       { text: "Watch playlist", variant: "secondary" },
     ],
-    social: {
-      facebook: "https://facebook.com/story1",
-      twitter: "https://twitter.com/story1",
-      instagram: "https://instagram.com/story1",
-    },
   },
   {
     id: 2,
@@ -23,11 +18,6 @@ const bookPlaylistVideo = [
       { text: "Buy Book", variant: "secondary" },
       { text: "Watch playlist", variant: "secondary" },
     ],
-    social: {
-      facebook: "https://facebook.com/story2",
-      twitter: "https://twitter.com/story2",
-      instagram: "https://instagram.com/story2",
-    },
   },
   {
     id: 3,
@@ -38,11 +28,6 @@ const bookPlaylistVideo = [
       { text: "Buy Book", variant: "secondary" },
       { text: "Watch playlist", variant: "secondary" },
     ],
-    social: {
-      facebook: "https://facebook.com/story3",
-      twitter: "https://twitter.com/story3",
-      instagram: "https://instagram.com/story3",
-    },
   },
   {
     id: 4,
@@ -53,11 +38,6 @@ const bookPlaylistVideo = [
       { text: "Buy Book", variant: "secondary" },
       { text: "Watch playlist", variant: "secondary" },
     ],
-    social: {
-      facebook: "https://facebook.com/story4",
-      twitter: "https://twitter.com/story4",
-      instagram: "https://instagram.com/story4",
-    },
   },
 ];
 

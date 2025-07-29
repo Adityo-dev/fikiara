@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SubjectCard({ icon, title, courses, workshops }) {
   return (
-    <div className="flex items-center gap-4 p-4 rounded-lg border border-[#FFFFFF1A] bg-[#FFFFFF1A] backdrop-blur-[2px] cursor-pointer">
+    <div className="flex items-center gap-4 p-4 rounded-lg border border-[#FFFFFF1A] bg-[#FFFFFF1A] backdrop-blur-[2px] shadow-sm cursor-pointer">
       {/* Subject Image */}
       <div className="bg-[#FFFFFF1A] p-4 rounded-lg">
         <Image
