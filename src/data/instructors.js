@@ -24,7 +24,7 @@ const instructors = [
     specialty: "Figma, Adobe XD",
     rating: 4.7,
     bio: "Sadia brings design thinking and creativity to every lesson and project she leads.",
-    image: "/instructor1.png",
+    image: "/instructor8.png",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const instructors = [
     specialty: "SEO, Google Ads, Analytics",
     rating: 4.6,
     bio: "Rima has worked with global brands and helps learners master marketing strategy.",
-    image: "/instructor3.png",
+    image: "/instructor4.png",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const instructors = [
     specialty: "Python, Pandas, ML",
     rating: 4.8,
     bio: "Hasibul teaches Python with real datasets and industry projects.",
-    image: "/instructor2.png",
+    image: "/instructor5.png",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const instructors = [
     specialty: "Ethical Hacking, Network Security",
     rating: 4.7,
     bio: "Nusrat has trained hundreds in penetration testing and cyber defense skills.",
-    image: "/instructor1.png",
+    image: "/instructor7.png",
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const instructors = [
     specialty: "Docker, AWS, CI/CD",
     rating: 4.9,
     bio: "Tanvir helps learners build cloud-native pipelines and infrastructure on AWS.",
-    image: "/instructor4.png",
+    image: "/instructor6.png",
   },
 ];
 
