@@ -4,7 +4,7 @@ export default function InstructorCard({ instructor }) {
   return (
     <div className="bg-[#FFF] rounded-lg shadow-sm p-4">
       {/* Image */}
-      <div className="w-full h-52 relative mb-4">
+      <div className="w-full h-[230px] relative mb-4">
         <Image
           src={instructor?.image}
           alt={instructor?.name}
