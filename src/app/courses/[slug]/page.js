@@ -1,20 +1,20 @@
 import DynamicCTA from "@/components/DynamicCTA";
-import AllCourse from "@/modules/allCourse/AllCourse";
+import CourseDetails from "@/modules/allCourse/courseDetails/CourseDetails";
 
-function page() {
+function CourseDetailsCompo() {
   return (
     <>
       <DynamicCTA
-        heading={"All course"}
+        heading={"Course Details"}
         description={
           "Browse impactful, Qur’an-based courses for personal growth and purpose-driven living."
         }
       />
 
-      {/* All Course Components */}
-      <AllCourse />
+      {/* Course Details Components */}
+      <CourseDetails />
     </>
   );
 }
 
-export default page;
+export default CourseDetailsCompo;
