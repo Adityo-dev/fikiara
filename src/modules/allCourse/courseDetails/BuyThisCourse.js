@@ -25,7 +25,7 @@ export default function BuyThisCourse() {
         <h3 className="text-2xl font-semibold text-[#101B24] mb-6 px-6">
           This course includes
         </h3>
-        <ul className="space-y-4">
+        <ul className="space-y-3">
           {features.map((item, idx) => (
             <li
               key={idx}
