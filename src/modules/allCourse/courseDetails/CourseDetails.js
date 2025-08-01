@@ -1,5 +1,6 @@
 import BuyThisCourse from "./BuyThisCourse";
 import CourseInfo from "./CourseInfo";
+import CourseTag from "./CourseTag";
 
 function CourseDetails() {
   return (
@@ -8,8 +9,9 @@ function CourseDetails() {
         <div className="col-span-4">
           <CourseInfo />
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 space-y-10">
           <BuyThisCourse />
+          <CourseTag />
         </div>
       </div>
     </section>
