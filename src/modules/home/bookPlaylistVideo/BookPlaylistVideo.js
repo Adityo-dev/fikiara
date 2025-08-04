@@ -16,7 +16,7 @@ function BookPlaylistVideo() {
       {/* Book Playlist Video Card */}
       <div className="container mx-auto px-4 grid grid-cols-4 gap-4 mt-16">
         {bookPlaylistVideo.map((card) => (
-          <BookPlaylistCard key={card.id} {...card} />
+          <BookPlaylistCard key={card.id} items={card} />
         ))}
       </div>
     </section>

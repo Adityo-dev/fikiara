@@ -1,19 +1,21 @@
 import Image from "next/image";
 
-export default function BookCard({ book }) {
+export default function BookCard({ items }) {
   return (
     <div className="relative bg-[#FFFFFFF6] rounded-lg shadow-sm overflow-hidden p-4">
       <Image
-        src={book.image}
+        src={items?.image}
         width={400}
         height={400}
-        alt={book.title}
+        alt={items?.title}
         className="h-60 w-full object-contain rounded"
       />
       {/* Book Info */}
-      <h3 className="text-lg font-medium text-[#101B24] mt-6">{book.title}</h3>
-      <p className="text-sm text-gray-600 mb-2">by {book.author}</p>
-      <p className="text-sm italic text-gray-500">{book.quote}</p>
+      <h3 className="text-lg font-medium text-[#101B24] mt-6">
+        {items?.title}
+      </h3>
+      <p className="text-sm text-gray-600 mb-2">by {items?.author}</p>
+      <p className="text-sm italic text-gray-500">{items?.quote}</p>
 
       {/* Book Store Action Button */}
       <div className="mt-4 flex justify-between items-center">

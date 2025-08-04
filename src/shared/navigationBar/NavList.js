@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const navItems = [
   { name: "All course", path: "/courses" },
-  { name: "skills", path: "/skills" },
-  { name: "admission", path: "/admission" },
+  { name: "book stores", path: "/book-stores" },
+  { name: "All Book Video List", path: "/book-video-list" },
   { name: "job", path: "/job" },
   { name: "book store", path: "/book-store" },
   { name: "book short video", path: "/book-short-video" },

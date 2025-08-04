@@ -4,8 +4,8 @@ import Carousel3D from "./Carousel3D";
 function Hero() {
   return (
     <section className="bg-[#114C5F] relative">
-      <div className="relative container mx-auto  px-4 flex items-center justify-between gap-8 py-32 z-30">
-        <div>
+      <div className="relative container mx-auto  px-4 grid grid-cols-2 gap-8 py-32 z-30">
+        <div className="col-span-1">
           <h1 className="text-[80px] font-semibold leading-24">
             Learn Anytime, <br /> Grow Every day.
           </h1>
@@ -22,7 +22,10 @@ function Hero() {
             </button>
           </div>
         </div>
-        <Carousel3D />
+
+        <div className="col-span-1">
+          <Carousel3D />
+        </div>
       </div>
       {/* Subject Components */}
       <div className="pb-24">

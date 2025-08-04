@@ -13,7 +13,7 @@ function OurBookStore() {
       {/* Book Store */}
       <div className="container mx-auto px-4 grid grid-cols-4 gap-4 mt-16">
         {booksStore.map((book) => (
-          <BookCard key={book.id} book={book} />
+          <BookCard key={book.id} items={book} />
         ))}
       </div>
     </section>
