@@ -3,7 +3,7 @@ import SectionColumnsHeaders from "@/components/sectionHeaders/SectionColumnsHea
 import { featuredCourses } from "@/data/featuredCourses";
 import Image from "next/image";
 import { useState } from "react";
-import CourseCard from "./CourseCard";
+import CourseCard from "../../../components/card/CourseCard";
 
 const filters = [
   "all courses",
@@ -49,7 +49,7 @@ export default function FeaturedCourses() {
       {/* Course Cards */}
       <div className="relative container mx-auto px-4 grid grid-cols-4 gap-4 mt-16 z-20">
         {filteredCourses.map((course) => (
-          <CourseCard key={course.id} course={course} />
+          <CourseCard key={course.id} items={course} />
         ))}
       </div>
 

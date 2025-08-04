@@ -5,6 +5,7 @@ const booksStore = [
     author: "Rachel Amphlett",
     image: "/theAlchemist.avif",
     quote: "Scape the ordinary, read a book.",
+    category: "Thriller",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const booksStore = [
     author: "James Clear",
     image: "/theAlchemist.avif",
     quote: "Tiny changes, remarkable results.",
+    category: "Self-help",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const booksStore = [
     author: "Paulo Coelho",
     image: "/theAlchemist.avif",
     quote: "Follow your personal legend.",
+    category: "Fiction",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const booksStore = [
     author: "Eckhart Tolle",
     image: "/theAlchemist.avif",
     quote: "Live in the moment.",
+    category: "Spirituality",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ const booksStore = [
     author: "Cal Newport",
     image: "/theAlchemist.avif",
     quote: "Focus is the new superpower.",
+    category: "Productivity",
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ const booksStore = [
     author: "David Goggins",
     image: "/theAlchemist.avif",
     quote: "Master your mind, defy the odds.",
+    category: "Memoir",
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ const booksStore = [
     author: "George Orwell",
     image: "/theAlchemist.avif",
     quote: "Big Brother is watching you.",
+    category: "Dystopian",
   },
   {
     id: 8,
@@ -54,6 +61,7 @@ const booksStore = [
     author: "Yuval Noah Harari",
     image: "/theAlchemist.avif",
     quote: "A brief history of humankind.",
+    category: "History",
   },
 ];
 

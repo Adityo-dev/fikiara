@@ -1,11 +1,18 @@
 import Image from "next/image";
 
-export default function BookPlaylistCard({ image, title, buttons, social }) {
+const buttons = [
+  { text: "Earn money", variant: "primary" },
+  { text: "Watch playlist", variant: "secondary" },
+  { text: "Buy book", variant: "secondary" },
+  { text: "Buy book", variant: "secondary" },
+];
+
+export default function BookPlaylistCard({ items }) {
   return (
     <div className="relative bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200">
       <div className="relative">
         <Image
-          src={image}
+          src={items?.image}
           width={400}
           height={400}
           alt="Card Image"
@@ -20,21 +27,6 @@ export default function BookPlaylistCard({ image, title, buttons, social }) {
             viewBox="0 0 100 100"
             fill="none"
           >
-            <g clip-path="url(#clip0_29685_1163)">
-              <path
-                d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100Z"
-                fill="white"
-                fill-opacity="0.5"
-              />
-              <path
-                d="M49.9986 81.611C67.4559 81.611 81.6078 67.4591 81.6078 50.0018C81.6078 32.5445 67.4559 18.3926 49.9986 18.3926C32.5413 18.3926 18.3894 32.5445 18.3894 50.0018C18.3894 67.4591 32.5413 81.611 49.9986 81.611Z"
-                fill="white"
-              />
-              <path
-                d="M63.0823 49.4279C63.5232 49.6825 63.5232 50.319 63.0823 50.5736L43.9497 61.6198C43.5088 61.8744 42.9574 61.5562 42.9574 61.0468V38.9545C42.9574 38.4453 43.5088 38.127 43.9497 38.3816L63.0823 49.4279Z"
-                fill="#EC1F27"
-              />
-            </g>
             <defs>
               <clipPath id="clip0_29685_1163">
                 <rect width="100" height="100" fill="white" />
@@ -46,7 +38,9 @@ export default function BookPlaylistCard({ image, title, buttons, social }) {
 
       <div className="p-4">
         <div className="flex justify-between gap-4 mb-8">
-          <p className="text-[#101B24] text-lg leading-7">{title}</p>
+          <p className="text-[#101B24] text-lg leading-7 line-clamp-2">
+            {items?.title}
+          </p>
           {/*  */}
           <div className="flex gap-2 text-gray-500">
             <svg
@@ -95,11 +89,11 @@ export default function BookPlaylistCard({ image, title, buttons, social }) {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-3">
           {buttons.map((btn, index) => (
             <button
               key={index}
-              className={`text-[#101B24] text-base font-medium px-6 py-2 cursor-pointer border border-[#FFA41F] rounded-md ${
+              className={`text-[#101B24] text-base font-medium px-6 py-2 cursor-pointer border border-[#FFA41F] rounded-md capitalize ${
                 btn?.variant === "primary"
                   ? "bg-[#FFA41F] text-white"
                   : "border border-gray-300 text-[#7D7D7D]"
