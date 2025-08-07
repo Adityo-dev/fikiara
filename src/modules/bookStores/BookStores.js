@@ -2,7 +2,7 @@
 import DynamicCourseSection from "@/components/DynamicCourseSection";
 
 import { booksStore } from "@/data/bookStore";
-import BookCard from "../home/ourBookStore/BookCard";
+import BookCard from "../../components/card/BookCard";
 
 export default function BookStores() {
   return (

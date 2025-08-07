@@ -1,10 +1,10 @@
 import SectionColumnsHeaders from "@/components/sectionHeaders/SectionColumnsHeaders";
 import { bookPlaylistVideo } from "@/data/bookPlaylistVideo";
-import BookPlaylistCard from "./BookPlaylistCard";
+import BookPlaylistCard from "../../../components/card/BookPlaylistCard";
 
 function BookPlaylistVideo() {
   return (
-    <section className="relative bg-[#eaf1ec] text-white py-32 px-4 overflow-hidden">
+    <section className="relative bg-[#F0ECE5] text-white py-32 px-4 overflow-hidden">
       {/* Section Headers title and description */}
       <SectionColumnsHeaders
         title={"Book Playlist Video"}

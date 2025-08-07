@@ -24,14 +24,14 @@ export default function MainFooter() {
           {/* Google Store And App Store Image */}
           <div className="flex space-x-2 mb-4">
             <Image
-              src="/appstore.png"
+              src="/icons/appstore.png"
               width={200}
               height={200}
               alt="App Store"
               className="w-[100px] h-[35px]"
             />
             <Image
-              src="/googleplay.png"
+              src="/icons/googleplay.png"
               width={200}
               height={200}
               alt="Google Play"

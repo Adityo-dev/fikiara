@@ -19,9 +19,9 @@ const data = [
 ];
 function StudentExperiences() {
   return (
-    <section className="relative bg-[#eaf1ec] py-32 overflow-hidden">
+    <section className="relative bg-[#F0ECE5] py-32 overflow-hidden">
       <SectionColumnsHeaders
-        title={"Student Experiences That Inspire"}
+        title={"Experiences of Students That Motivate"}
         description={
           "Our students are at the heart of everything we do. Hear how our LMS has helped thousands build skills, and succeed in their academic and professional journeys."
         }
