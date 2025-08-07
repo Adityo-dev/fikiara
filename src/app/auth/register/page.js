@@ -1,3 +1,4 @@
+import DownloadAppSection from "@/components/DownloadAppSection";
 import DynamicCTA from "@/components/DynamicCTA";
 import RegisterFrom from "@/modules/auth/register/RegisterFrom";
 
@@ -11,8 +12,9 @@ function Register() {
         }
       />
 
-      {/* Register From */}
+      {/* Register From And Download App Section */}
       <RegisterFrom />
+      <DownloadAppSection />
     </>
   );
 }

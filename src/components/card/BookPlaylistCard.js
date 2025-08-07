@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const buttons = [
   { text: "Earn money", variant: "primary" },
@@ -10,7 +11,7 @@ const buttons = [
 export default function BookPlaylistCard({ items }) {
   return (
     <div className="relative bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200">
-      <div className="relative">
+      <Link href={`/book-video-list/${items?.title}`} className="relative">
         <Image
           src={items?.image}
           width={400}
@@ -28,7 +29,7 @@ export default function BookPlaylistCard({ items }) {
             className="w-12 h-12 object-contain"
           />
         </div>
-      </div>
+      </Link>
 
       <div className="p-4">
         <div className="flex justify-between gap-4 mb-8">

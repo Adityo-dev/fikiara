@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CourseCard({ items }) {
   return (
     <div className="bg-[#FFF] rounded-lg border border-[#FFFFFF33] p-3 text-white w-full shadow-sm">
-      <div className="relative">
+      <Link href={`/courses/${items?.title}`} className="relative">
         <Image
           width={400}
           height={400}
@@ -14,7 +15,7 @@ export default function CourseCard({ items }) {
         <p className="absolute -bottom-3 left-3 text-sm bg-[#FFA41F] text-[#fff] px-4 py-1 rounded-sm inline-block">
           {items?.category}
         </p>
-      </div>
+      </Link>
 
       <div className="mt-8">
         <div className="flex items-center justify-between">
