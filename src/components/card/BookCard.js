@@ -1,10 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function BookCard({ items }) {
   return (
     <div className="relative bg-[#F9F7F2] rounded-md shadow-sm overflow-hidden p-4">
       {/* Image */}
-      <div className="bg-[#F0ECE5] rounded-lg overflow-hidden">
+      <Link
+        href={`/book/${items?.title}`}
+        className="bg-[#F0ECE5] rounded-lg overflow-hidden"
+      >
         <Image
           src={items?.image}
           width={400}
@@ -12,7 +16,7 @@ export default function BookCard({ items }) {
           alt={items?.title}
           className="h-[300px] w-full object-contain py-4"
         />
-      </div>
+      </Link>
 
       {/* Title */}
       <h3 className="text-[#101B24] text-[20px] text-base font-medium leading-6 mt-4 line-clamp-1">

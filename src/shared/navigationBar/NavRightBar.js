@@ -13,13 +13,15 @@ function NavRightBar() {
           className="w-6 h-6 object-contain"
         />
         <span className="w-[1px] h-7 bg-[#D4D4D4] opacity-60" />
-        <Image
-          src={"/icons/card.svg"}
-          width={50}
-          height={50}
-          alt=""
-          className="w-6 h-6 object-contain"
-        />
+        <Link href={"/my-cart"}>
+          <Image
+            src={"/icons/card.svg"}
+            width={50}
+            height={50}
+            alt=""
+            className="w-6 h-6 object-contain"
+          />
+        </Link>
       </div>
       <Link
         href={"/auth/register"}
