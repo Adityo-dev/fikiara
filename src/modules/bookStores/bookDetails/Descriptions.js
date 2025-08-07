@@ -10,8 +10,8 @@ function Descriptions() {
 
       <p className="text-[#101B24CC] leading-relaxed">
         helps you take control of your day, beat procrastination, and finally
-        make space for what matters most. Whether you're Whether you're a
-        student, professional, or entrepreneur, you'll discover how to overcome
+        make space for what matters most. Whether youre Whether youre a student,
+        professional, or entrepreneur, youll discover how to overcome
         procrastination, build momentum, and create lasting change. With
         practical tools and mindset shifts, this book empowers you to do
         less—but accomplish more.{" "}
