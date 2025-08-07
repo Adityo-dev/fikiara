@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function NavRightBar() {
   return (
     <div className="flex items-center justify-between gap-[22px]">
@@ -37,9 +39,12 @@ function NavRightBar() {
           />
         </svg>
       </div>
-      <button className="rounded-md bg-[#FFA41F] text-[#101B24] text-lg font-medium px-6 py-2 cursor-pointer">
+      <Link
+        href={"/auth/register"}
+        className="rounded-md bg-[#FFA41F] text-[#101B24] text-lg font-medium px-6 py-2 cursor-pointer"
+      >
         Login
-      </button>
+      </Link>
     </div>
   );
 }

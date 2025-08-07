@@ -2,7 +2,7 @@
 import DynamicCourseSection from "@/components/DynamicCourseSection";
 
 import { bookPlaylistVideo } from "@/data/bookPlaylistVideo";
-import BookPlaylistCard from "../home/bookPlaylistVideo/BookPlaylistCard";
+import BookPlaylistCard from "../../components/card/BookPlaylistCard";
 
 export default function BookVideoList() {
   return (
