@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CourseCard({ items }) {
   return (
     <div className="bg-[#FFF] rounded-lg border border-[#FFFFFF33] p-3 text-white w-full shadow-sm">
-      <div className="relative">
+      <Link href={`/courses/${items?.title}`} className="relative">
         <Image
           width={400}
           height={400}
@@ -14,7 +15,7 @@ export default function CourseCard({ items }) {
         <p className="absolute -bottom-3 left-3 text-sm bg-[#FFA41F] text-[#fff] px-4 py-1 rounded-sm inline-block">
           {items?.category}
         </p>
-      </div>
+      </Link>
 
       <div className="mt-8">
         <div className="flex items-center justify-between">
@@ -40,24 +41,13 @@ export default function CourseCard({ items }) {
 
         <div className="mt-5 flex justify-between text-sm border border-[#7D7D7D] p-3 rounded-lg">
           <div className="flex items-center gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-            >
-              <defs>
-                <clipPath id="clip0_29685_907">
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="white"
-                    transform="translate(0 0.849609)"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
+            <Image
+              src={"/icons/lessons.svg"}
+              width={200}
+              height={200}
+              alt=""
+              className="w-7 h-7 object-contain"
+            />
             <p className="flex flex-col">
               <span className="text-[#7D7D7D]">Lessons</span>
               <span className="text-[#101B24] font-medium">
@@ -67,24 +57,14 @@ export default function CourseCard({ items }) {
           </div>
           <span className="w-[1.5px] h-[40px] bg-[#4A4D4F] opacity-20"></span>
           <div className="flex items-center gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-            >
-              <defs>
-                <clipPath id="clip0_29685_920">
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="white"
-                    transform="translate(0 0.849609)"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
+            <Image
+              src={"/icons/clock.svg"}
+              width={200}
+              height={200}
+              alt=""
+              className="w-6 h-6 object-contain"
+            />
+
             <p className="flex flex-col">
               <span className="text-[#7D7D7D]">Duration</span>
               <span className="text-[#101B24] font-medium">

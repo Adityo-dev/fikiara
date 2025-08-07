@@ -12,8 +12,8 @@ export default function Home() {
       {/* <ComingSoon /> */}
       <Hero />
       <FeaturedCourses />
-      <BookPlaylistVideo />
       <OurBookStore />
+      <BookPlaylistVideo />
       <Instructors />
       <StudentExperiences />
       <JoinCommunity />
