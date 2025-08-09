@@ -18,17 +18,15 @@ const tabs = {
   Dashboard: dynamic(() =>
     import("@/modules/manage/dashboardStats/DashboardStats")
   ),
+  Profile: dynamic(() => import("@/modules/manage/profile/Profile")),
+  Password: dynamic(() => import("@/modules/manage/password/Password")),
   "Enrolled Courses": dynamic(() =>
     import("@/modules/manage/enrolledCourses/EnrolledCourses")
   ),
-  Profile: dynamic(() => import("@/modules/manage/profile/Profile")),
-  Password: dynamic(() => import("@/modules/manage/password/Password")),
   "Wish List": dynamic(() => import("@/modules/manage/Wishlist")),
-  Points: dynamic(() => import("@/modules/manage/Points")),
   Orders: dynamic(() => import("@/modules/manage/orders/Orders")),
   Coupon: dynamic(() => import("@/modules/manage/Coupon")),
   Review: dynamic(() => import("@/modules/manage/Review")),
-  Referral: dynamic(() => import("@/modules/manage/Referral")),
 };
 
 const navItems = [
@@ -40,8 +38,6 @@ const navItems = [
   { name: "Orders", icon: <ShoppingBag className="w-5 h-5" /> },
   { name: "Coupon", icon: <Share2 className="w-5 h-5" /> },
   { name: "Review", icon: <Edit className="w-5 h-5" /> },
-  { name: "Points", icon: <User className="w-5 h-5" /> },
-  { name: "Referral", icon: <Share2 className="w-5 h-5" /> },
 ];
 
 const descriptions = {
