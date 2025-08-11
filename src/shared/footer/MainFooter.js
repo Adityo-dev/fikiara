@@ -43,9 +43,16 @@ export default function MainFooter() {
           <div>
             <p className="text-[#FFF] text-lg leading-7">Follow Us</p>
             <div className="flex space-x-4 mt-4">
+
               <Link
                 href="https://www.facebook.com/fikiaraofficial"
                 target="_blank"
+
+              <a
+                href="https://www.facebook.com/fikiaraofficial"
+                target="_blank"
+                rel="noopener noreferrer"
+
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -59,10 +66,18 @@ export default function MainFooter() {
                     fill="#D4D4D4"
                   />
                 </svg>
+
               </Link>
               <Link
                 href="https://www.youtube.com/@fikiaraofficial"
                 target="_blank"
+
+              </a>
+              <a
+                href="https://www.youtube.com/@fikiaraofficial"
+                target="_blank"
+                rel="noopener noreferrer"
+
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,11 +91,19 @@ export default function MainFooter() {
                     fill="#D4D4D4"
                   />
                 </svg>
+
               </Link>
 
               <Link
                 href="https://www.instagram.com/fikiaraofficial"
                 target="_blank"
+
+              </a>
+
+              <a
+                href="https://www.instagram.com/fikiaraofficial"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -92,6 +115,31 @@ export default function MainFooter() {
                   <path
                     d="M8.73354 2.0166H17.1271C20.3246 2.0166 22.9226 4.61459 22.9226 7.81212V16.2056C22.9226 17.7427 22.312 19.2168 21.2251 20.3037C20.1382 21.3906 18.6641 22.0012 17.1271 22.0012H8.73354C5.53601 22.0012 2.93802 19.4032 2.93802 16.2056V7.81212C2.93802 6.27506 3.54862 4.80094 4.63549 3.71407C5.72236 2.6272 7.19647 2.0166 8.73354 2.0166ZM8.53369 4.01506C7.57965 4.01506 6.66469 4.39405 5.99008 5.06866C5.31547 5.74327 4.93647 6.65824 4.93647 7.61228V16.4055C4.93647 18.3939 6.54523 20.0027 8.53369 20.0027H17.3269C18.2809 20.0027 19.1959 19.6237 19.8705 18.9491C20.5451 18.2745 20.9241 17.3595 20.9241 16.4055V7.61228C20.9241 5.62381 19.3154 4.01506 17.3269 4.01506H8.53369ZM18.1762 5.5139C18.5075 5.5139 18.8252 5.64549 19.0594 5.87973C19.2937 6.11397 19.4253 6.43167 19.4253 6.76293C19.4253 7.0942 19.2937 7.4119 19.0594 7.64613C18.8252 7.88037 18.5075 8.01197 18.1762 8.01197C17.845 8.01197 17.5273 7.88037 17.293 7.64613C17.0588 7.4119 16.9272 7.0942 16.9272 6.76293C16.9272 6.43167 17.0588 6.11397 17.293 5.87973C17.5273 5.64549 17.845 5.5139 18.1762 5.5139ZM12.9303 7.01274C14.2554 7.01274 15.5261 7.53912 16.4631 8.47608C17.4001 9.41303 17.9264 10.6838 17.9264 12.0089C17.9264 13.3339 17.4001 14.6047 16.4631 15.5417C15.5261 16.4786 14.2554 17.005 12.9303 17.005C11.6052 17.005 10.3345 16.4786 9.39749 15.5417C8.46054 14.6047 7.93416 13.3339 7.93416 12.0089C7.93416 10.6838 8.46054 9.41303 9.39749 8.47608C10.3345 7.53912 11.6052 7.01274 12.9303 7.01274ZM12.9303 9.0112C12.1353 9.0112 11.3728 9.32702 10.8106 9.8892C10.2484 10.4514 9.93261 11.2138 9.93261 12.0089C9.93261 12.8039 10.2484 13.5664 10.8106 14.1286C11.3728 14.6907 12.1353 15.0066 12.9303 15.0066C13.7253 15.0066 14.4878 14.6907 15.05 14.1286C15.6122 13.5664 15.928 12.8039 15.928 12.0089C15.928 11.2138 15.6122 10.4514 15.05 9.8892C14.4878 9.32702 13.7253 9.0112 12.9303 9.0112Z"
                     fill="#D4D4D4"
+                  />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.tiktok.com/@fikiaraofficial"
+                target="_blank"
+                rel="noopener noreferrer"
+
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 512 512"
+                  fill="none"
+                >
+                  <rect rx="15%" height="512" width="512" fill="#ffffff" />
+                  <path
+                    d="M237 215a117 117 0 1 0 101 115v-128a150 150 0 0 0 88 28v-63a88 88 0 0 1-88-88h-64v252a54 54 0 1 1-37-51z"
+                    fill="#f05"
+                  />
+                  <path
+                    d="M219 200a117 117 0 1 0 101 115v-128a150 150 0 0 0 88 28v-63a88 88 0 0 1-88-88h-64v252a54 54 0 1 1-37-51z"
+                    fill="#0ee"
                   />
                 </svg>
               </Link>
@@ -159,11 +207,11 @@ export default function MainFooter() {
               <li>
                 Email:{" "}
                 <a href="mailto:fikiara@gmail.com" className="underline">
-                  fikiara@gmail.com
+                  fikiara.info@gmail.com
                 </a>
               </li>
-              <li>Phone: 0122323233</li>
-              <li>Address: 12/ Rode Koustia</li>
+              <li>Phone: +8801865989675</li>
+              <li>Address: MM Rd, Kushtia Bangladesh</li>
             </ul>
           </div>
         </div>

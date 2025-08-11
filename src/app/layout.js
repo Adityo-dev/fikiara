@@ -1,9 +1,28 @@
+
 // app/layout.js  (Next.js 13+ App Router)
 import MainFooter from "@/shared/footer/MainFooter";
 import MainNavigationBar from "@/shared/navigationBar/MainNavigationBar";
 import { headers } from "next/headers";
 import Script from "next/script";
 import "./globals.css";
+// app/layout.js
+import MainFooter from "@/shared/footer/MainFooter";
+import MainNavigationBar from "@/shared/navigationBar/MainNavigationBar";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import Script from "next/script";
+import { headers } from "next/headers";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
 
 export const metadata = {
   metadataBase: new URL("https://www.fikiara.com"),
@@ -14,6 +33,7 @@ export const metadata = {
   description:
     "Fikiara is a platform for learning and personal transformation through books, videos, and courses inspired by many types books.",
   keywords: [
+
     "Fikiara",
     "Quran learning",
     "Life transformation",
@@ -57,31 +77,44 @@ export const metadata = {
     "fikiara Quranic personal development",
     "fikiara Quranic education",
     "fikiara Quranic learning",
+
+    "Fikiara", "Books", "Videos", "Courses", "Quran learning", "Life transformation",
+    "Islamic courses", "Personal development", "Self-improvement", "Knowledge", "Online learning",
+    "fikiara.com", "fikiara books", "fikiara videos", "fikiara courses"
+
   ],
   authors: [{ name: "Fikiara", url: "https://www.fikiara.com" }],
   creator: "Fikiara",
   publisher: "Fikiara",
 
+
   // Open Graph (Facebook, Instagram, TikTok, etc.)
+
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://www.fikiara.com",
     siteName: "Fikiara",
     title: "Fikiara – Transform Your Life with Knowledge",
+
     description:
       "Books, Videos & Courses for personal transformation, inspired by the Qur’an.",
+
+    description: "Books, Videos & Courses for personal transformation, inspired by the Qur’an.",
+
     images: [
       {
         url: "https://www.fikiara.com/og-image.jpg",
         width: 1200,
         height: 630,
+
         alt: "Fikiara – চিন্তা বদলালে জীবন বদলায়।",
+
+        alt: "Fikiara – চিন্তা বদলালে জীবন বদলায়।",
+
       },
     ],
   },
-
-  // Twitter Card (works also for YouTube sharing)
   twitter: {
     card: "summary_large_image",
     site: "@FikiaraOfficial",
@@ -90,8 +123,6 @@ export const metadata = {
     description: "Books, Videos & Courses for personal transformation.",
     images: ["https://www.fikiara.com/og-image.jpg"],
   },
-
-  // Robots & Indexing
   robots: {
     index: true,
     follow: true,
@@ -103,13 +134,12 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
-
   alternates: {
     canonical: "https://www.fikiara.com",
   },
 };
 
-// Dynamic sitemap & robots.txt
+// Auto Dynamic Sitemap Generator
 export async function generateSitemap() {
   const baseUrl = "https://www.fikiara.com";
 
@@ -123,6 +153,17 @@ export async function generateSitemap() {
   const staticPages = ["", "/books", "/videos", "/courses"];
 
   const urls = [
+
+  const [books, videos, courses] = await Promise.all([
+    fetch(`${baseUrl}/api/books`).then((res) => res.json()),
+    fetch(`${baseUrl}/api/videos`).then((res) => res.json()),
+    fetch(`${baseUrl}/api/courses`).then((res) => res.json()),
+  ]);
+
+  const staticPages = ["", "/books", "/videos", "/courses"];
+
+  return [
+
     ...staticPages.map((path) => ({
       url: `${baseUrl}${path}`,
       lastModified: new Date(),
@@ -140,10 +181,9 @@ export async function generateSitemap() {
       lastModified: new Date(course.updatedAt),
     })),
   ];
-
-  return urls;
 }
 
+// Robots.txt
 export const robots = () => ({
   rules: {
     userAgent: "*",
@@ -152,7 +192,6 @@ export const robots = () => ({
   sitemap: "https://www.fikiara.com/sitemap.xml",
 });
 
-// Google Search Console Verification
 export default function RootLayout({ children }) {
   const headersList = headers();
   const currentUrl = headersList.get("x-url") || "https://www.fikiara.com";
@@ -167,10 +206,11 @@ export default function RootLayout({ children }) {
           content="UUMrfZueowRoy1izs0c_aXKUtn2LYYkNJbf2N9i3uhA"
         />
 
-        {/* Favicons */}
-        <link rel="icon" href="/favicon.ico" />
 
-        {/* Schema.org JSON-LD for Rich Snippets */}
+        {/* Favicons */}
+
+        <link rel="icon" href="/favicon.ico" />
+        {/* Schema.org JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -190,19 +230,28 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
+
       <body>
         <MainNavigationBar />
         {children}
         <MainFooter />
+
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="w-full absolute z-40">
+          <MainNavigationBar />
+        </div>
+        {children}
+        <MainFooter />
+
+
         {/* TikTok Pixel */}
         <Script id="tiktok-pixel" strategy="afterInteractive">
           {`
             !function (w, d, t) {
               w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];
               ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie"];
-              ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};
+              ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}; 
               for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
-              ttq.instance=function(t){var e=ttq._i[t]||[];return{on:ttq.on,once:ttq.once,off:ttq.off,track:ttq.track,page:ttq.page,identify:ttq.identify,alias:ttq.alias,group:ttq.group,ready:ttq.ready}};
               ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js";
               ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r;var i=d.createElement("script");
               i.type="text/javascript",i.async=!0,i.src=r+"?sdkid="+e+"&lib="+t;
