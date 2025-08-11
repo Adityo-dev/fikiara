@@ -24,17 +24,17 @@ export default function MainFooter() {
           {/* Google Store And App Store Image */}
           <div className="flex space-x-2 mb-4">
             <Image
-              src="/icons/appstore.png"
-              width={200}
-              height={200}
-              alt="App Store"
-              className="w-[100px] h-[35px]"
-            />
-            <Image
               src="/icons/googleplay.png"
               width={200}
               height={200}
               alt="Google Play"
+              className="w-[100px] h-[35px]"
+            />
+            <Image
+              src="/icons/appstore.png"
+              width={200}
+              height={200}
+              alt="App Store"
               className="w-[100px] h-[35px]"
             />
           </div>
@@ -43,7 +43,10 @@ export default function MainFooter() {
           <div>
             <p className="text-[#FFF] text-lg leading-7">Follow Us</p>
             <div className="flex space-x-4 mt-4">
-              <a href="#">
+              <Link
+                href="https://www.facebook.com/fikiaraofficial"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -56,8 +59,11 @@ export default function MainFooter() {
                     fill="#D4D4D4"
                   />
                 </svg>
-              </a>
-              <a href="#">
+              </Link>
+              <Link
+                href="https://www.youtube.com/@fikiaraofficial"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
@@ -70,22 +76,12 @@ export default function MainFooter() {
                     fill="#D4D4D4"
                   />
                 </svg>
-              </a>
-              <a href="#">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                >
-                  <path
-                    d="M19.3254 3.00684C19.8554 3.00684 20.3637 3.21739 20.7385 3.59217C21.1133 3.96695 21.3238 4.47527 21.3238 5.00529V18.9945C21.3238 19.5245 21.1133 20.0328 20.7385 20.4076C20.3637 20.7824 19.8554 20.9929 19.3254 20.9929H5.33619C4.80617 20.9929 4.29786 20.7824 3.92307 20.4076C3.54829 20.0328 3.33774 19.5245 3.33774 18.9945V5.00529C3.33774 4.47527 3.54829 3.96695 3.92307 3.59217C4.29786 3.21739 4.80617 3.00684 5.33619 3.00684H19.3254ZM18.8258 18.4949V13.199C18.8258 12.335 18.4826 11.5065 17.8717 10.8956C17.2608 10.2847 16.4322 9.94148 15.5683 9.94148C14.7189 9.94148 13.7297 10.4611 13.2501 11.2405V10.1313H10.4622V18.4949H13.2501V13.5687C13.2501 12.7993 13.8696 12.1698 14.639 12.1698C15.01 12.1698 15.3658 12.3171 15.6282 12.5795C15.8905 12.8418 16.0379 13.1977 16.0379 13.5687V18.4949H18.8258ZM7.21474 8.56254C7.65996 8.56254 8.08695 8.38568 8.40176 8.07086C8.71658 7.75604 8.89345 7.32906 8.89345 6.88384C8.89345 5.95456 8.14402 5.19514 7.21474 5.19514C6.76687 5.19514 6.33735 5.37306 6.02065 5.68975C5.70396 6.00644 5.52605 6.43597 5.52605 6.88384C5.52605 7.81312 6.28546 8.56254 7.21474 8.56254ZM8.60367 18.4949V10.1313H5.83581V18.4949H8.60367Z"
-                    fill="#D4D4D4"
-                  />
-                </svg>
-              </a>
-              <a href="#">
+              </Link>
+
+              <Link
+                href="https://www.instagram.com/fikiaraofficial"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
@@ -98,7 +94,7 @@ export default function MainFooter() {
                     fill="#D4D4D4"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
