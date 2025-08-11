@@ -43,10 +43,16 @@ export default function MainFooter() {
           <div>
             <p className="text-[#FFF] text-lg leading-7">Follow Us</p>
             <div className="flex space-x-4 mt-4">
+
+              <Link
+                href="https://www.facebook.com/fikiaraofficial"
+                target="_blank"
+
               <a
                 href="https://www.facebook.com/fikiaraofficial"
                 target="_blank"
                 rel="noopener noreferrer"
+
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -60,11 +66,18 @@ export default function MainFooter() {
                     fill="#D4D4D4"
                   />
                 </svg>
+
+              </Link>
+              <Link
+                href="https://www.youtube.com/@fikiaraofficial"
+                target="_blank"
+
               </a>
               <a
                 href="https://www.youtube.com/@fikiaraofficial"
                 target="_blank"
                 rel="noopener noreferrer"
+
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -78,6 +91,13 @@ export default function MainFooter() {
                     fill="#D4D4D4"
                   />
                 </svg>
+
+              </Link>
+
+              <Link
+                href="https://www.instagram.com/fikiaraofficial"
+                target="_blank"
+
               </a>
 
               <a
@@ -103,6 +123,7 @@ export default function MainFooter() {
                 href="https://www.tiktok.com/@fikiaraofficial"
                 target="_blank"
                 rel="noopener noreferrer"
+
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +142,7 @@ export default function MainFooter() {
                     fill="#0ee"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

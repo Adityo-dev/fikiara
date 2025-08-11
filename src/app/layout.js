@@ -1,3 +1,10 @@
+
+// app/layout.js  (Next.js 13+ App Router)
+import MainFooter from "@/shared/footer/MainFooter";
+import MainNavigationBar from "@/shared/navigationBar/MainNavigationBar";
+import { headers } from "next/headers";
+import Script from "next/script";
+import "./globals.css";
 // app/layout.js
 import MainFooter from "@/shared/footer/MainFooter";
 import MainNavigationBar from "@/shared/navigationBar/MainNavigationBar";
@@ -16,6 +23,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata = {
   metadataBase: new URL("https://www.fikiara.com"),
   title: {
@@ -25,26 +33,85 @@ export const metadata = {
   description:
     "Fikiara is a platform for learning and personal transformation through books, videos, and courses inspired by many types books.",
   keywords: [
+
+    "Fikiara",
+    "Quran learning",
+    "Life transformation",
+    "Islamic courses",
+    "Personal development",
+    "Book learning platform",
+    "Video courses",
+    "Online education",
+    "Spiritual growth",
+    "Knowledge",
+    "Self-improvement",
+    "Islamic teachings",
+    "Quranic studies",
+    "Online learning",
+    "E-learning",
+    "Quranic education",
+    "Islamic knowledge",
+    "Transformative learning",
+    "Quranic wisdom",
+    "Islamic personal development",
+    "Quranic life lessons",
+    "Quranic teachings",
+    "fikiara",
+    "fikiara.com",
+    "fikiara books",
+    "fikiara videos",
+    "fikiara courses",
+    "fikiara learning",
+    "fikiara education",
+    "fikiara online courses",
+    "fikiara personal growth",
+    "fikiara spiritual growth",
+    "fikiara self-improvement",
+    "fikiara knowledge",
+    "fikiara Quran",
+    "fikiara Islamic education",
+    "fikiara Quranic studies",
+    "fikiara Quranic wisdom",
+    "fikiara Quranic teachings",
+    "fikiara Quranic life lessons",
+    "fikiara Quranic personal development",
+    "fikiara Quranic education",
+    "fikiara Quranic learning",
+
     "Fikiara", "Books", "Videos", "Courses", "Quran learning", "Life transformation",
     "Islamic courses", "Personal development", "Self-improvement", "Knowledge", "Online learning",
     "fikiara.com", "fikiara books", "fikiara videos", "fikiara courses"
+
   ],
   authors: [{ name: "Fikiara", url: "https://www.fikiara.com" }],
   creator: "Fikiara",
   publisher: "Fikiara",
+
+
+  // Open Graph (Facebook, Instagram, TikTok, etc.)
+
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://www.fikiara.com",
     siteName: "Fikiara",
     title: "Fikiara – Transform Your Life with Knowledge",
+
+    description:
+      "Books, Videos & Courses for personal transformation, inspired by the Qur’an.",
+
     description: "Books, Videos & Courses for personal transformation, inspired by the Qur’an.",
+
     images: [
       {
         url: "https://www.fikiara.com/og-image.jpg",
         width: 1200,
         height: 630,
+
+        alt: "Fikiara – চিন্তা বদলালে জীবন বদলায়।",
+
         alt: "Fikiara – চিন্তা বদলালে জীবন বদলায়।",
+
       },
     ],
   },
@@ -76,6 +143,17 @@ export const metadata = {
 export async function generateSitemap() {
   const baseUrl = "https://www.fikiara.com";
 
+  // এখানে Books, Videos, Courses ডাইনামিক ডেটা ধরছে
+  const books = await fetch(`${baseUrl}/api/books`).then((res) => res.json());
+  const videos = await fetch(`${baseUrl}/api/videos`).then((res) => res.json());
+  const courses = await fetch(`${baseUrl}/api/courses`).then((res) =>
+    res.json()
+  );
+
+  const staticPages = ["", "/books", "/videos", "/courses"];
+
+  const urls = [
+
   const [books, videos, courses] = await Promise.all([
     fetch(`${baseUrl}/api/books`).then((res) => res.json()),
     fetch(`${baseUrl}/api/videos`).then((res) => res.json()),
@@ -85,6 +163,7 @@ export async function generateSitemap() {
   const staticPages = ["", "/books", "/videos", "/courses"];
 
   return [
+
     ...staticPages.map((path) => ({
       url: `${baseUrl}${path}`,
       lastModified: new Date(),
@@ -121,10 +200,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Google Search Console */}
+
         <meta
           name="google-site-verification"
           content="UUMrfZueowRoy1izs0c_aXKUtn2LYYkNJbf2N9i3uhA"
         />
+
+
+        {/* Favicons */}
+
         <link rel="icon" href="/favicon.ico" />
         {/* Schema.org JSON-LD */}
         <script
@@ -146,12 +230,19 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
+
+      <body>
+        <MainNavigationBar />
+        {children}
+        <MainFooter />
+
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="w-full absolute z-40">
           <MainNavigationBar />
         </div>
         {children}
         <MainFooter />
+
 
         {/* TikTok Pixel */}
         <Script id="tiktok-pixel" strategy="afterInteractive">
