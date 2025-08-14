@@ -1,5 +1,4 @@
 import Subject from "../subject/Subject";
-import Carousel3D from "./Carousel3D";
 
 function Hero() {
   return (
@@ -23,9 +22,9 @@ function Hero() {
           </div>
         </div>
 
-        <div className="col-span-1">
+        {/* <div className="col-span-1">
           <Carousel3D />
-        </div>
+        </div> */}
       </div>
       {/* Subject Components */}
       <div className="pb-24">
