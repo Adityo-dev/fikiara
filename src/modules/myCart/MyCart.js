@@ -40,10 +40,8 @@ export default function MyCart() {
   );
 
   return (
-    <div className="min-h-screen bg-gray-500 py-10 px-4">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold mb-8">My Cart</h1>
-
+    <section className="bg-[#F5F1EA]">
+      <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-6">
           {/* Cart Items */}
           <div className="md:col-span-2 space-y-4">
@@ -112,6 +110,6 @@ export default function MyCart() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -5,8 +5,7 @@ const navItems = [
   { name: "book stores", path: "/book-stores" },
   { name: "All Book Video List", path: "/book-video-list" },
   { name: "job", path: "/job" },
-  { name: "book store", path: "/book-store" },
-  { name: "book short video", path: "/book-short-video" },
+  { name: "join community", path: "/community" },
 ];
 
 function NavList() {
