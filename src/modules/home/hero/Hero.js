@@ -1,12 +1,13 @@
+import Image from "next/image";
 import Subject from "../subject/Subject";
 
 function Hero() {
   return (
     <section className="bg-[#114C5F] relative">
-      <div className="relative container mx-auto  px-4 grid grid-cols-2 gap-8 py-32 z-30">
-        <div className="col-span-1">
+      <div className="relative container mx-auto  px-4 grid grid-cols-2 items-center gap-12 py-12 z-30">
+        <div>
           <h1 className="text-[80px] font-semibold leading-24">
-            Learn Anytime, <br /> Grow Every day.
+            Learn Anytime, Grow Every day.
           </h1>
           <p className="text-[#D4D4D4] leading-7 text-lg mt-6">
             Explore expert-led courses designed to boost your skills and
@@ -22,10 +23,15 @@ function Hero() {
           </div>
         </div>
 
-        {/* <div className="col-span-1">
-          <Carousel3D />
-        </div> */}
+        <Image
+          src={"/images/heroImage.png"}
+          width={800}
+          height={800}
+          alt=""
+          className="w-fit h-[500px]"
+        />
       </div>
+
       {/* Subject Components */}
       <div className="pb-24">
         <Subject />

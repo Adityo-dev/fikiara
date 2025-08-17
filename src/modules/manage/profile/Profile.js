@@ -56,7 +56,7 @@ function Profile() {
             value={profile[name]}
             onChange={handleChange}
             readOnly={!isEditing}
-            className="w-full p-3 bg-[#EBEBEB] border border-[#FFA41F66] rounded-md outline-none focus:border-[#FFA41F] transition-colors"
+            className="w-full p-3 bg-[#EBEBEB] border border-[#EBEBEB] rounded-md outline-none focus:border-[#FFA41F] transition-colors"
           />
         </div>
       ))}
