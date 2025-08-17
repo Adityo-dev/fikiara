@@ -4,14 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-const RegisterFrom = () => {
+const LoginForm = () => {
   const [form, setForm] = useState({
-    firstName: "",
-    lastName: "",
     email: "",
     password: "",
-    confirmPassword: "",
-    agree: false,
+    remember: false,
   });
 
   const handleChange = (e) => {
@@ -34,43 +31,18 @@ const RegisterFrom = () => {
         {/* Illustration */}
         <div className="hidden md:flex flex-col items-center justify-center w-1/2">
           <Image
-            src="/registrationImage.png"
+            src="/images/loginIllustration.jpg"
             width={600}
             height={600}
-            alt="Study"
+            alt="Login Illustration"
             className="w-full h-fit rounded"
           />
         </div>
 
         {/* Form */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-2xl font-semibold mb-6 text-[#000]">Sign up</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-[#000]">Log in</h2>
           <form onSubmit={handleSubmit} className="space-y-5">
-            <div className="flex space-x-4">
-              <div className="w-full">
-                <label className={inputFieldLabelStyles}>First Name</label>
-                <input
-                  type="text"
-                  name="firstName"
-                  placeholder="First name"
-                  value={form?.firstName}
-                  onChange={handleChange}
-                  className={inputFieldStyles}
-                />
-              </div>
-              <div className="w-full">
-                <label className={inputFieldLabelStyles}>Last Name</label>
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last name"
-                  value={form?.lastName}
-                  onChange={handleChange}
-                  className={inputFieldStyles}
-                />
-              </div>
-            </div>
-
             <div>
               <label className={inputFieldLabelStyles}>Email</label>
               <input
@@ -84,53 +56,37 @@ const RegisterFrom = () => {
             </div>
 
             <div>
-              <label className={inputFieldLabelStyles}>New Password</label>
+              <label className={inputFieldLabelStyles}>Password</label>
               <input
                 type="password"
                 name="password"
-                placeholder="New Password"
+                placeholder="Password"
                 value={form?.password}
                 onChange={handleChange}
                 className={inputFieldStyles}
               />
             </div>
 
-            <div>
-              <label className={inputFieldLabelStyles}>Confirm Password</label>
-              <input
-                type="password"
-                name="confirmPassword"
-                placeholder="Confirm Password"
-                value={form?.confirmPassword}
-                onChange={handleChange}
-                className={inputFieldStyles}
-              />
+            <div className="flex items-center justify-between text-sm text-[#000]">
+              <label className="flex items-center space-x-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="remember"
+                  checked={form?.remember}
+                  onChange={handleChange}
+                />
+                <span>Remember me</span>
+              </label>
+              <Link href="/auth/forgot-password" className="text-[#366ED7]">
+                Forgot Password?
+              </Link>
             </div>
-
-            <label className="flex items-center space-x-2 text-sm text-[#000] cursor-pointer">
-              <input
-                type="checkbox"
-                name="agree"
-                checked={form?.agree}
-                onChange={handleChange}
-              />
-              <span>
-                I agree to the{" "}
-                <Link href="#" className="text-[#366ED7]">
-                  Terms of Service
-                </Link>{" "}
-                and{" "}
-                <Link href="#" className="text-[#366ED7]">
-                  Privacy Policy
-                </Link>
-              </span>
-            </label>
 
             <button
               type="submit"
               className="w-full bg-[#FFA41F] text-white py-3 rounded"
             >
-              Sign up
+              Log in
             </button>
           </form>
 
@@ -144,29 +100,29 @@ const RegisterFrom = () => {
             <button className="flex gap-1.5 items-center justify-center w-full bg-[#FFA41F29] text-[#000] rounded py-3 cursor-pointer">
               <Image
                 src="/icons/google.svg"
-                width={50}
-                height={50}
-                alt=""
-                className="w-6 h-6 object-contain"
+                width={24}
+                height={24}
+                alt="Google"
+                className="object-contain"
               />
               Google
             </button>
             <button className="flex gap-1.5 items-center justify-center w-full bg-[#FFA41F29] text-[#000] rounded py-3 cursor-pointer">
               <Image
                 src="/icons/facebook.svg"
-                width={50}
-                height={50}
-                alt=""
-                className="w-6 h-6 object-contain"
+                width={24}
+                height={24}
+                alt="Facebook"
+                className="object-contain"
               />
               Facebook
             </button>
           </div>
 
           <p className="text-sm text-center text-[#7D7D7D] mt-4">
-            Already have an account?{" "}
-            <Link href="/auth/login" className="text-[#FFA41F]">
-              Log in
+            Don’t have an account?{" "}
+            <Link href="/auth/register" className="text-[#FFA41F]">
+              Sign up
             </Link>
           </p>
         </div>
@@ -175,4 +131,4 @@ const RegisterFrom = () => {
   );
 };
 
-export default RegisterFrom;
+export default LoginForm;

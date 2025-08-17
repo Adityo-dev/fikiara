@@ -2,7 +2,7 @@ import SectionRowHeaders from "@/components/sectionHeaders/SectionRowHeaders";
 
 function JoinCommunity() {
   return (
-    <section className="relative bg-[#F5F1EA] py-32 overflow-hidden">
+    <section className="relative bg-[#F5F1EA] py-24 overflow-hidden">
       <SectionRowHeaders
         title={"Join Our Learning Community."}
         description={
@@ -10,7 +10,7 @@ function JoinCommunity() {
         }
         btn={true}
         buttonText={"Join Community"}
-        buttonLink={"/join-community"}
+        buttonLink={"/community"}
       />
     </section>
   );

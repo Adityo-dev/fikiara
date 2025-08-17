@@ -79,7 +79,7 @@ export default function DynamicCourseSection({
             placeholder={`Search ${type.toLowerCase()}`}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="border px-4 py-2 w-full max-w-md rounded"
+            className="max-w-md w-full p-3 bg-[#EBEBEB] border border-[#FFC9B5] rounded-md outline-none focus:border-[#FFA41F] transition-colors "
           />
         </div>
 
