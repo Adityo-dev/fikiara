@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import EmptyState from "./EmptyState";
 
 export default function DynamicCourseSection({
   title,
@@ -94,7 +95,11 @@ export default function DynamicCourseSection({
               )
             )
           ) : (
-            <p>No {type.toLowerCase()} match your search.</p>
+            <div className="col-span-full">
+              <EmptyState
+                message={`No ${type.toLowerCase()} match your search.`}
+              />
+            </div>
           )}
         </div>
       </div>
