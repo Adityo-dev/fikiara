@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Custom404() {
   return (
     <main className="min-h-[90vh] flex items-center justify-center bg-[#F5F1EA] from-gray-50 to-white p-8">
-      <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <section className="space-y-4">
-          <h1 className="text-[80px] font-extrabold text-[#000000]">404</h1>
+          <h1 className="text-[100px] font-extrabold text-[#000000]">404</h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-[#000000]">
             Page not found
           </h2>
@@ -38,14 +38,7 @@ export default function Custom404() {
         </section>
 
         <aside className="flex items-center justify-center">
-          <div className="bg-white p-6 rounded-2xl shadow-lg ring-1 ring-gray-100 w-full max-w-md">
-            <ErrorIllustration />
-            {/* <AppNotFound /> */}
-            <p className="mt-4 text-sm text-[#000000]">
-              This is a friendly learning 404 — perfect for experimentation. Try
-              customizing the illustration color to match your brand.
-            </p>
-          </div>
+          <ErrorIllustration />
         </aside>
       </div>
     </main>

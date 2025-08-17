@@ -10,7 +10,7 @@ function JoinCommunity() {
         }
         btn={true}
         buttonText={"Join Community"}
-        buttonLink={"/join-community"}
+        buttonLink={"/community"}
       />
     </section>
   );

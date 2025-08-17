@@ -24,14 +24,14 @@ export default function MainFooter() {
           {/* Google Store And App Store Image */}
           <div className="flex space-x-2 mb-4">
             <Image
-              src="/icons/googleplay.png"
+              src="/icons/googlePlay.png"
               width={200}
               height={200}
               alt="Google Play"
               className="w-[100px] h-[35px]"
             />
             <Image
-              src="/icons/appstore.png"
+              src="/icons/appStore.png"
               width={200}
               height={200}
               alt="App Store"
@@ -42,7 +42,59 @@ export default function MainFooter() {
           {/* Social media Info */}
           <div>
             <p className="text-[#FFF] text-lg leading-7">Follow Us</p>
-            <div className="flex space-x-4 mt-4"></div>
+            <div className="flex space-x-4 mt-2">
+              <Link
+                href="https://www.facebook.com/fikiaraofficial"
+                target="_blank"
+              >
+                <Image
+                  src="/icons/facebook.png"
+                  width={50}
+                  height={50}
+                  alt="Fikiara Official Facebook Page"
+                  className="w-6 h-6 object-contain"
+                />
+              </Link>
+
+              <Link
+                href="https://www.youtube.com/@fikiaraofficial"
+                target="_blank"
+              >
+                <Image
+                  src="/icons/youtube.png"
+                  width={50}
+                  height={50}
+                  alt="Fikiara Official YouTube Channel"
+                  className="w-6 h-6 object-contain"
+                />
+              </Link>
+
+              <Link
+                href="https://www.instagram.com/fikiaraofficial/"
+                target="_blank"
+              >
+                <Image
+                  src="/icons/instagram.png"
+                  width={50}
+                  height={50}
+                  alt="Fikiara Official Instagram Profile"
+                  className="w-6 h-6 object-contain"
+                />
+              </Link>
+
+              <Link
+                href="https://www.tiktok.com/@fikiaraofficial"
+                target="_blank"
+              >
+                <Image
+                  src="/icons/tiktok.png"
+                  width={50}
+                  height={50}
+                  alt="Fikiara Official TikTok Account"
+                  className="w-6 h-6 object-contain"
+                />
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -55,19 +107,19 @@ export default function MainFooter() {
             </h3>
             <ul className="space-y-4 text-[14px] text-[#E4E4E4]">
               <li>
-                <a href="#">Home</a>
+                <Link href="#">Home</Link>
               </li>
               <li>
-                <a href="#">About us</a>
+                <Link href="#">About us</Link>
               </li>
               <li>
-                <a href="#">Courses</a>
+                <Link href="#">Courses</Link>
               </li>
               <li>
-                <a href="#">Become an instructor</a>
+                <Link href="#">Become an instructor</Link>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <Link href="#">Contact</Link>
               </li>
             </ul>
           </div>
@@ -79,19 +131,19 @@ export default function MainFooter() {
             </h3>
             <ul className="space-y-4 text-[14px] text-[#E4E4E4]">
               <li>
-                <a href="#">FAQs</a>
+                <Link href="#">FAQs</Link>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <Link href="#">Blog</Link>
               </li>
               <li>
-                <a href="#">Help Center</a>
+                <Link href="#">Help Center</Link>
               </li>
               <li>
-                <a href="#">Student Support</a>
+                <Link href="#">Student Support</Link>
               </li>
               <li>
-                <a href="#">Terms & Conditions</a>
+                <Link href="#">Terms & Conditions</Link>
               </li>
             </ul>
           </div>
@@ -105,11 +157,11 @@ export default function MainFooter() {
               <li>Support</li>
               <li>
                 Email:{" "}
-                <a href="mailto:fikiara@gmail.com" className="underline">
+                <Link href="mailto:fikiara@gmail.com" className="underline">
                   fikiara.info@gmail.com
-                </a>
+                </Link>
               </li>
-              <li>Phone: +8801865989675</li>
+              <li>Phone: +8801234567890</li>
               <li>Address: MM Rd, Kushtia Bangladesh</li>
             </ul>
           </div>

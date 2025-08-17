@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function InstructorCard({ instructor }) {
   const socialIcons = [
-    { key: "share", bg: "#FF9F1C", icon: "/icons/share.svg" },
-    { key: "facebook", bg: "#3B5998", icon: "/icons/facebook.svg" },
-    { key: "linkedin", bg: "#0077B5", icon: "/icons/facebook.svg" },
+    { key: "share", bg: "#FF9F1C", icon: "/icons/facebook.png" },
+    { key: "facebook", bg: "#3B5998", icon: "/icons/linkedin.png" },
+    { key: "linkedin", bg: "#0077B5", icon: "/icons/youtube.png" },
   ];
 
   return (

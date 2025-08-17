@@ -44,7 +44,7 @@ function Password() {
         <input
           name="current"
           type="password"
-          className="w-full p-3 bg-[#EBEBEB] border border-[#FFA41F66] rounded-md outline-none focus:border-[#FFA41F] transition-colors"
+          className="w-full p-3 bg-[#EBEBEB] border border-[#EBEBEB] rounded-md outline-none focus:border-[#FFA41F] transition-colors"
           placeholder="Enter current password"
           value={formData.current}
           onChange={handleChange}
@@ -55,7 +55,7 @@ function Password() {
         <input
           name="new"
           type="password"
-          className="w-full p-3 bg-[#EBEBEB] border border-[#FFA41F66] rounded-md outline-none focus:border-[#FFA41F] transition-colors"
+          className="w-full p-3 bg-[#EBEBEB] border border-[#EBEBEB] rounded-md outline-none focus:border-[#FFA41F] transition-colors"
           placeholder="Enter new password"
           value={formData.new}
           onChange={handleChange}
@@ -66,7 +66,7 @@ function Password() {
         <input
           name="confirm"
           type="password"
-          className="w-full p-3 bg-[#EBEBEB] border border-[#FFA41F66] rounded-md outline-none focus:border-[#FFA41F] transition-colors"
+          className="w-full p-3 bg-[#EBEBEB] border border-[#EBEBEB] rounded-md outline-none focus:border-[#FFA41F] transition-colors"
           placeholder="Confirm new password"
           value={formData.confirm}
           onChange={handleChange}

@@ -1,0 +1,127 @@
+const modulesData = [
+  {
+    id: 1,
+    title: "Introduction to Web Development",
+    subtitle: "ওয়েব ডেভেলপমেন্টের পরিচিতি",
+    duration: "12 mins to complete",
+    locked: false,
+    items: [
+      {
+        id: 1,
+        title: "Course Overview",
+        type: "Video",
+        duration: "4 mins",
+        free: true,
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+      },
+      {
+        id: 2,
+        title: "How the Web Works",
+        type: "Video",
+        duration: "5 mins",
+        free: true,
+        videoUrl: "https://www.w3schools.com/html/movie.mp4",
+      },
+      {
+        id: 3,
+        title: "Quick HTML Preview",
+        type: "Video",
+        duration: "3 mins",
+        free: false,
+        videoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "HTML Fundamentals",
+    subtitle: "এইচটিএমএল এর বেসিক",
+    duration: "30 mins to complete",
+    locked: true,
+    items: [
+      {
+        id: 1,
+        title: "HTML Structure & Tags",
+        type: "Video",
+        duration: "8 mins",
+        free: false,
+      },
+      {
+        id: 2,
+        title: "Links, Lists & Images",
+        type: "Video",
+        duration: "9 mins",
+        free: false,
+      },
+      {
+        id: 3,
+        title: "HTML Quiz 1",
+        type: "Quiz",
+        duration: "8 mins",
+        free: false,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "CSS Basics",
+    subtitle: "সিএসএস এর পরিচিতি",
+    duration: "42 mins to complete",
+    locked: true,
+    items: [
+      {
+        id: 1,
+        title: "CSS Syntax & Selectors",
+        type: "Video",
+        duration: "10 mins",
+        free: false,
+      },
+      {
+        id: 2,
+        title: "Box Model & Layout",
+        type: "Video",
+        duration: "12 mins",
+        free: false,
+      },
+      {
+        id: 3,
+        title: "CSS Quiz 1",
+        type: "Quiz",
+        duration: "10 mins",
+        free: false,
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "JavaScript Essentials",
+    subtitle: "জাভাস্ক্রিপ্ট এর বেসিক",
+    duration: "50 mins to complete",
+    locked: true,
+    items: [
+      {
+        id: 1,
+        title: "Variables & Data Types",
+        type: "Video",
+        duration: "12 mins",
+        free: false,
+      },
+      {
+        id: 2,
+        title: "Functions & Events",
+        type: "Video",
+        duration: "14 mins",
+        free: false,
+      },
+      {
+        id: 3,
+        title: "JavaScript Quiz 1",
+        type: "Quiz",
+        duration: "10 mins",
+        free: false,
+      },
+    ],
+  },
+];
+
+export { modulesData };
