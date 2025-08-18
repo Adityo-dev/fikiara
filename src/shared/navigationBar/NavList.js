@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const navItems = [
+
   { name: "Home", path: "/" },
   { name: "Courses", path: "/courses" },
   { name: "Book Stores", path: "/book-stores" },
@@ -8,6 +9,13 @@ const navItems = [
   { name: "Bundles & Plans", path: "/bundles-and-plans" },
   { name: "Community", path: "/community" },
   { name: "Earn With Us", path: "/earn-with-us" },
+
+  { name: "All course", path: "/courses" },
+  { name: "book stores", path: "/book-stores" },
+  { name: "All Book Video List", path: "/book-video-list" },
+  { name: "job", path: "/job" },
+  { name: "join community", path: "/community" },
+
 ];
 
 function NavList() {
