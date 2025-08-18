@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function CartSummary({ subtotal }) {
   return (
     <div className="w-full h-fit bg-[#FFFFFF] text-[#101B24] p-4 rounded-md shadow-sm">
@@ -15,9 +17,11 @@ function CartSummary({ subtotal }) {
         <span>Total:</span>
         <span>৳ {subtotal}</span>
       </h3>
-      <button className="w-full mt-6 bg-[#FFA41F] text-[#FFFFFF] py-3 rounded-md">
-        Proceed to Checkout
-      </button>
+      <Link href={"/checkout"}>
+        <button className="w-full mt-6 bg-[#FFA41F] text-[#FFFFFF] py-3 rounded-md cursor-pointer">
+          Proceed to Checkout
+        </button>
+      </Link>
     </div>
   );
 }
