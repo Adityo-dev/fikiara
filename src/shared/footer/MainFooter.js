@@ -17,11 +17,13 @@ export default function MainFooter() {
             />
           </Link>
           <p className="text-[#D4D4D4] leading-7 mt-4 mb-6">
-            Experience learning on the go! Download our mobile app to access
-            courses anytime, anywhere fast,
+            Fikiara is a world-class learning and life-transformation platform that, inspired by diverse books, combines knowledge, leadership, personal growth, and modern education to bring true change in life while also helping learners develop practical skills through courses.
           </p>
 
-          {/* Google Store And App Store Image */}
+          <p className="text-[#D4D4D4] leading-7 mt-4 mb-6">
+            Download our mobile app and access courses, books, videos, and tools anytime and anywhere.  
+          </p>
+
           <div className="flex space-x-2 mb-4">
             <Image
               src="/icons/googlePlay.png"
@@ -43,10 +45,7 @@ export default function MainFooter() {
           <div>
             <p className="text-[#FFF] text-lg leading-7">Follow Us</p>
             <div className="flex space-x-4 mt-2">
-              <Link
-                href="https://www.facebook.com/fikiaraofficial"
-                target="_blank"
-              >
+              <Link href="https://www.facebook.com/fikiaraofficial" target="_blank">
                 <Image
                   src="/icons/facebook.png"
                   width={50}
@@ -56,10 +55,7 @@ export default function MainFooter() {
                 />
               </Link>
 
-              <Link
-                href="https://www.youtube.com/@fikiaraofficial"
-                target="_blank"
-              >
+              <Link href="https://www.youtube.com/@fikiaraofficial" target="_blank">
                 <Image
                   src="/icons/youtube.png"
                   width={50}
@@ -69,10 +65,7 @@ export default function MainFooter() {
                 />
               </Link>
 
-              <Link
-                href="https://www.instagram.com/fikiaraofficial/"
-                target="_blank"
-              >
+              <Link href="https://www.instagram.com/fikiaraofficial/" target="_blank">
                 <Image
                   src="/icons/instagram.png"
                   width={50}
@@ -82,10 +75,7 @@ export default function MainFooter() {
                 />
               </Link>
 
-              <Link
-                href="https://www.tiktok.com/@fikiaraofficial"
-                target="_blank"
-              >
+              <Link href="https://www.tiktok.com/@fikiaraofficial" target="_blank">
                 <Image
                   src="/icons/tiktok.png"
                   width={50}
@@ -98,74 +88,60 @@ export default function MainFooter() {
           </div>
         </div>
 
-        {/* Footer Info Link */}
+        {/* Footer Info Links */}
         <div className="col-span-5 flex justify-between gap-8 flex-grow">
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-[#E4E4E4] text-lg font-semibold mb-6">
-              Quick Links
-            </h3>
-            <ul className="space-y-4 text-[14px] text-[#E4E4E4]">
-              <li>
-                <Link href="#">Home</Link>
-              </li>
-              <li>
-                <Link href="#">About us</Link>
-              </li>
-              <li>
-                <Link href="#">Courses</Link>
-              </li>
-              <li>
-                <Link href="#">Become an instructor</Link>
-              </li>
-              <li>
-                <Link href="#">Contact</Link>
-              </li>
-            </ul>
-          </div>
+<div>
+  <h3 className="text-[#E4E4E4] text-lg font-semibold mb-6">Quick Navigation</h3>
+  <ul className="space-y-4 text-[14px] text-[#E4E4E4]">
+    <li><Link href="/benefits">Benefits & Value</Link></li>
+    <li><Link href="/features">Features</Link></li>
+    <li><Link href="/ecosystem">Ecosystem & Community</Link></li>
+    <li><Link href="/pricing">Pricing & Plans</Link></li>
+    <li><Link href="/about">About Us</Link></li>
+    <li><Link href="/support">Support & Help</Link></li>
+    <li><Link href="/trust">Security & Trust</Link></li>
+    <li><Link href="/careers">Careers & Partnership</Link></li>
+  </ul>
+</div>
 
-          {/* Resources */}
-          <div>
-            <h3 className="text-[#E4E4E4] text-lg font-semibold mb-6">
-              Resources
-            </h3>
-            <ul className="space-y-4 text-[14px] text-[#E4E4E4]">
-              <li>
-                <Link href="#">FAQs</Link>
-              </li>
-              <li>
-                <Link href="#">Blog</Link>
-              </li>
-              <li>
-                <Link href="#">Help Center</Link>
-              </li>
-              <li>
-                <Link href="#">Student Support</Link>
-              </li>
-              <li>
-                <Link href="#">Terms & Conditions</Link>
-              </li>
-            </ul>
-          </div>
+      {/* Legal & Policies */}
+<div>
+  <h3 className="text-[#E4E4E4] text-lg font-semibold mb-6">Legal & Policies</h3>
+  <ul className="space-y-4 text-[14px] text-[#E4E4E4]">
+    <li><Link href="/legal/privacy">Privacy Policy</Link></li>
+    <li><Link href="/legal/terms">Terms & Conditions</Link></li>
+    <li><Link href="/legal/refund">Refund & Guarantee Policy</Link></li>
+    <li><Link href="/legal/transparency">Transparency Statement</Link></li>
+    <li><Link href="/legal/cookie">Cookie Policy</Link></li>
+    <li><Link href="/legal/intellectual-property">Intellectual Property Policy</Link></li>
+    <li><Link href="/legal/disclaimer">Disclaimer & Limitation of Liability</Link></li>
+    <li><Link href="/legal/community">Community Guidelines</Link></li>
+    <li><Link href="/legal/accessibility">Accessibility Statement</Link></li>
+    <li><Link href="/legal/security">Security Policy</Link></li>
+  </ul>
+</div>
 
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-[#E4E4E4] text-lg font-semibold mb-6">
-              Contact Information
-            </h3>
-            <ul className="space-y-4 text-[14px] text-[#E4E4E4]">
-              <li>Support</li>
-              <li>
-                Email:{" "}
-                <Link href="mailto:fikiara@gmail.com" className="underline">
-                  fikiara.info@gmail.com
-                </Link>
-              </li>
-              <li>Phone: +8801234567890</li>
-              <li>Address: MM Rd, Kushtia Bangladesh</li>
-            </ul>
-          </div>
+        {/* Help & Guidance */}
+<div>
+  <h3 className="text-[#E4E4E4] text-lg font-semibold mb-6">Help & Guidance</h3>
+  <ul className="space-y-4 text-[14px] text-[#E4E4E4]">
+    <li><Link href="/support#faq">FAQ (Common Questions)</Link></li>
+    <li><Link href="/support#getting-started">Getting Started Guide</Link></li>
+    <li><Link href="/support#tutorials">Tutorial Videos</Link></li>
+    <li><Link href="/support#contact">Contact Form</Link></li>
+    <li><Link href="/support#live-chat">Live Chat Support</Link></li>
+    <li><Link href="/support#community">Community Forum</Link></li>
+    <li><Link href="/support#syllabus">Course Syllabus / Outline</Link></li>
+    <li><Link href="/support#technical">Technical Requirements / Troubleshooting</Link></li>
+    <li><Link href="/support#feedback">Feedback & Suggestions</Link></li>
+    <li><Link href="/support#accessibility">Accessibility Help</Link></li>
+  </ul>
+</div>
         </div>
+      </div>
+
+      <div className="text-center text-[#D4D4D4] mt-12">
+        <p className="text-sm">&copy; {new Date().getFullYear()} Fikiara. All rights reserved.</p>
       </div>
     </footer>
   );
