@@ -1,12 +1,13 @@
 import Link from "next/link";
 
 const navItems = [
-  { name: "All course", path: "/courses" },
-  { name: "book stores", path: "/book-stores" },
-  { name: "All Book Video List", path: "/book-video-list" },
-  { name: "job", path: "/job" },
-  { name: "book store", path: "/book-store" },
-  { name: "book short video", path: "/book-short-video" },
+  { name: "Home", path: "/" },
+  { name: "Courses", path: "/courses" },
+  { name: "Book Stores", path: "/book-stores" },
+  { name: "Books Videos ", path: "/book-video-list" },
+  { name: "Bundles & Plans", path: "/bundles-and-plans" },
+  { name: "Community", path: "/community" },
+  { name: "Earn With Us", path: "/earn-with-us" },
 ];
 
 function NavList() {
